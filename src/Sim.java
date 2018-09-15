@@ -119,6 +119,5 @@ public class Sim extends JPanel{
             }
         }
     }
-
 }
 

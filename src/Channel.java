@@ -39,7 +39,7 @@ public class Channel {
 
     public ArrayList<Integer> advanceTime() {
         int queueCode = CLEAR_CHANNEL;
-        ArrayList<Integer> transmissions = new ArrayList<Integer>();
+        ArrayList<Integer> transmissions = new ArrayList<>();
         transmissions.add(queueCode);
 
         for (int i = 0; i < nNodes; i++){ //Populate max size of nodes
@@ -58,6 +58,7 @@ public class Channel {
                 }
             }
         }
+
         queue.add(queueCode);
         queue.poll(); // remove element to keep queue size the same
         transmissions.set(transmissions.size()-1, queueCode);
